@@ -15,7 +15,7 @@ class LoginController extends Controller
 {
     public function login()
     {
-
+        return Response::view("webs.login");
     }
     public function logout()
     {

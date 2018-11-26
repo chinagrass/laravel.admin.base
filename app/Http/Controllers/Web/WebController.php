@@ -13,8 +13,18 @@ use App\Http\Controllers\Controller;
 
 class WebController extends Controller
 {
-    public function __controller()
+    /**
+     * 实例化一个控制器实例
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        // 添加中间件
+
+        $this->middleware('auth');
+
+        $this->middleware('log')->only('index');
+
+        $this->middleware('subscribed')->except('store');
     }
 }
