@@ -16,8 +16,10 @@ class LoginController extends Controller
 {
     public function login()
     {
-        return Response::view("webs.login");
+        $data = ["title" => 'Admin Login'];
+        return Response::view("webs.login", $data);
     }
+
     public function logout()
     {
 

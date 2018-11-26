@@ -8,7 +8,6 @@ class IndexController extends WebController
 {
     public function index()
     {
-        $data = ["title" => 'Admin Login'];
-        return Response::view("webs.index",$data);
+        return Response::view("webs.index");
     }
 }
