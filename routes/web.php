@@ -11,9 +11,8 @@
 |
 */
 //Route::get('/', "Web\\IndexController@index");
-Route::get('/Web', "IndexController@index")->name("/");
+//Route::get('/Web', "IndexController@index")->name("/");
 Route::namespace("Web")->group(function(){
     Route::get('/',"IndexController@index");// 首页
-    Route::get('/login',"LoginController@login");// 登陆
-
+    Route::get('/login',"LoginController@login");// 登录
 });
