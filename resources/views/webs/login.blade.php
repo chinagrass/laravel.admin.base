@@ -54,7 +54,7 @@
         <p class="panel-heading no-collapse">{{$formName}}}</p>
 
         <div class="panel-body">
-            <form>
+            <form method="post" action="{{asset('signIn')}}">
                 <div class="form-group">
                     <label>Username</label>
                     <input type="text" class="form-control span12" name="username">
