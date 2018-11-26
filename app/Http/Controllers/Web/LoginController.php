@@ -10,7 +10,7 @@ namespace App\Http\Controllers\Web;
 
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Response;
 
 class LoginController extends Controller
 {
