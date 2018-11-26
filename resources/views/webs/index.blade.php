@@ -1,5 +1,5 @@
 @extends('layouts.layout')
-@section('title', 'Page Title')
+@section('title', '首页')
 @section('content')
     <div class="header">
         <div class="stats">
@@ -18,7 +18,6 @@
 
     </div>
     <div class="main-content">
-
 
         <div class="panel panel-default">
             <a href="#page-stats" class="panel-heading" data-toggle="collapse">Latest Stats</a>
