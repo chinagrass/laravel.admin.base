@@ -16,7 +16,7 @@ class LoginController extends Controller
 {
     public function login()
     {
-        $data = ["title" => 'Admin Login'];
+        $data = ["title" => 'Admin Login','formName'=>'Sign In WeiGo Admin'];
         return Response::view("webs.login", $data);
     }
 

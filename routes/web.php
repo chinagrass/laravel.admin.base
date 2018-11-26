@@ -14,5 +14,6 @@
 //Route::get('/Web', "IndexController@index")->name("/");
 Route::namespace("Web")->group(function(){
     Route::get('/',"IndexController@index");// 首页
-    Route::get('/login',"LoginController@login");// 登录
+    Route::get('/login',"LoginController@login");// 登录页面
+    Route::post('/signIn','SignController@signIn'); // 提交表单
 });
