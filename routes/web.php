@@ -10,5 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Route::get('/', "Web\\IndexController@index");
+Route::get('/Web', "IndexController@index")->name("/");
+Route::namespace("Web")->group(function(){
+    Route::get('/',"IndexController@index");// 首页
 
-Route::get('/', "IndexController@index");
+});

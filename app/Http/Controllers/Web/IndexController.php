@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Web;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Response;
 
-class IndexController extends Controller
+class IndexController extends WebController
 {
     public function index()
     {
-        return 111;
+        return Response::view("webs.index");
     }
 }
