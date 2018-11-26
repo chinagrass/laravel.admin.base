@@ -55,6 +55,7 @@
 
         <div class="panel-body">
             <form method="post" action="{{asset('signIn')}}">
+                @csrf
                 <div class="form-group">
                     <label>Username</label>
                     <input type="text" class="form-control span12" name="username">
