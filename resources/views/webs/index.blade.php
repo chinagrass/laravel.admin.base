@@ -8,12 +8,12 @@
     <meta name="author" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{\Illuminate\Support\Facades\URL::asset('../resources/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{\Illuminate\Support\Facades\URL::asset('../resources/plug/font-awesome/css/font-awesome.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('plug/font-awesome/css/font-awesome.css')}}">
 
-    <script src="{{\Illuminate\Support\Facades\URL::asset('../resources/js/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('js/jquery/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
 
-    <script src="../../plug/jQuery-Knob/js/jquery.knob.js" type="text/javascript"></script>
+    <script src="{{asset('plug/jQuery-Knob/js/jquery.knob.js')}}" type="text/javascript"></script>
     <script type="text/javascript">
         $(function() {
             $(".knob").knob();
@@ -21,8 +21,8 @@
     </script>
 
 
-    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/theme.css">
-    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/premium.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/stylesheets/theme.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/stylesheets/premium.css')}}">
 
 </head>
 <body class=" theme-blue">
