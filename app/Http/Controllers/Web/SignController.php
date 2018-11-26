@@ -14,7 +14,6 @@ use App\Models\AdminUserModel;
 use App\Repositories\AdminUserRepository;
 use App\Repositories\RegisterRepository;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
 class SignController extends Controller
 {

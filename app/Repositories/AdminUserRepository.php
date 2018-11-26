@@ -33,7 +33,7 @@ class AdminUserRepository extends BaseRepository
             if ($user->status != 1) {
                 throw new \Exception("账号不能登陆", ErrorCodeCommon::REFUSE_SIGN_IN);
             }
-            session("user", ["username" => $user->username, "status" => $user->status]);
+            session(["user" => ["username" => $user->username, "status" => $user->status]]);
         } catch (\Exception $e) {
             $result["code"] = $e->getCode();
             $result["msg"] = $e->getMessage();
