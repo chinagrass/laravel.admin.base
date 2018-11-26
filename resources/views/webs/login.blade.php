@@ -63,7 +63,7 @@
                     <label>Password</label>
                     <input type="password" class="form-control span12 form-control" name="password">
                 </div>
-                <input class="btn btn-primary pull-right" type="submit" />
+                <input class="btn btn-primary pull-right" type="submit" value="sign in" />
                 <label class="remember-me"><input type="checkbox"> Remember me</label>
 
                 <div class="clearfix"></div>

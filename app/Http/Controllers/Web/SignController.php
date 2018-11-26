@@ -8,6 +8,7 @@
 
 namespace App\Http\Controllers\Web;
 
+use App\Http\Common\ErrorCodeCommon;
 use App\Http\Controllers\Controller;
 use App\Models\AdminUserModel;
 use App\Repositories\AdminUserRepository;
@@ -16,6 +17,11 @@ use Illuminate\Http\Request;
 
 class SignController extends Controller
 {
+    /**
+     * 登录
+     * @param Request $request
+     * @return array
+     */
     public function signIn(Request $request)
     {
         $username = $request->input("username", "");
@@ -26,7 +32,10 @@ class SignController extends Controller
             $adminUserRepository = new AdminUserRepository($model);
             RegisterRepository::set("admin_user_repository", $adminUserRepository);
         }
-        $result = $adminUserRepository->checkUser($username, $pwd);
+        $result = ["code" => ErrorCodeCommon::SIGN_IN_ERROR, "msg" => "登录失败"];
+        if ($adminUserRepository instanceof AdminUserRepository) {
+            $result = $adminUserRepository->checkUser($username, $pwd);
+        }
         return $result;
 
     }
