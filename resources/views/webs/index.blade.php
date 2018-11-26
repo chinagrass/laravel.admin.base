@@ -377,7 +377,7 @@
 </div>
 
 
-<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="{{asset('js/bootstrap/bootstrap.js')}}"></script>
 <script type="text/javascript">
     $("[rel=tooltip]").tooltip();
     $(function() {
