@@ -8,10 +8,10 @@
     <meta name="author" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-    <link rel="stylesheet" href="../../plug/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{\Illuminate\Support\Facades\URL::asset('../resources/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{\Illuminate\Support\Facades\URL::asset('../resources/plug/font-awesome/css/font-awesome.css')}}">
 
-    <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="{{\Illuminate\Support\Facades\URL::asset('../resources/js/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
 
     <script src="../../plug/jQuery-Knob/js/jquery.knob.js" type="text/javascript"></script>
     <script type="text/javascript">
