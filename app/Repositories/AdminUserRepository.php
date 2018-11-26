@@ -18,21 +18,22 @@ class AdminUserRepository extends BaseRepository
      * @param $password
      * @return array
      */
-    public function checkUser($username,$password)
+    public function checkUser($username, $password)
     {
         try {
-            $result = ["code"=>ErrorCodeCommon::SUCCESS,"msg"=>"登录成功！"];
+            $result = ["code" => ErrorCodeCommon::SUCCESS, "msg" => "登录成功！"];
             $adminUserModel = $this->model;
             $password = md5($password);// 此处将来封装成方法
-            $user = $adminUserModel->where("username",$username)
-                ->where("pwd",$password)
+            $user = $adminUserModel->where("username", $username)
+                ->where("pwd", $password)
                 ->first();
             if (!$user) {
-                throw new \Exception("账号密码不正确",ErrorCodeCommon::SIGN_IN_ERROR);
+                throw new \Exception("账号密码不正确", ErrorCodeCommon::SIGN_IN_ERROR);
             }
             if ($user->status != 1) {
-                throw new \Exception("账号不能登陆",ErrorCodeCommon::REFUSE_SIGN_IN);
+                throw new \Exception("账号不能登陆", ErrorCodeCommon::REFUSE_SIGN_IN);
             }
+            session("user", ["username" => $user->username, "status" => $user->status]);
         } catch (\Exception $e) {
             $result["code"] = $e->getCode();
             $result["msg"] = $e->getMessage();

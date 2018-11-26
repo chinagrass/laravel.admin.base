@@ -14,6 +14,7 @@ use App\Models\AdminUserModel;
 use App\Repositories\AdminUserRepository;
 use App\Repositories\RegisterRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class SignController extends Controller
 {
@@ -32,12 +33,13 @@ class SignController extends Controller
             $adminUserRepository = new AdminUserRepository($model);
             RegisterRepository::set("admin_user_repository", $adminUserRepository);
         }
-        $result = ["code" => ErrorCodeCommon::SIGN_IN_ERROR, "msg" => "登录失败"];
         if ($adminUserRepository instanceof AdminUserRepository) {
             $result = $adminUserRepository->checkUser($username, $pwd);
         }
-        return $result;
-
+        if (isset($result["code"]) && $result["code"] == ErrorCodeCommon::SUCCESS) {
+            return redirect("/");
+        }
+        return redirect("/login");
     }
 
     public function signOut()
