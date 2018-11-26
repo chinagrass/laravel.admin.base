@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2018/11/26
- * Time: 14:20
- */
 
 namespace App\Http\Middleware;
 
@@ -12,6 +6,13 @@ use Closure;
 
 class CheckLogin
 {
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
     public function handle($request, Closure $next)
     {
         if(!session('user')){
