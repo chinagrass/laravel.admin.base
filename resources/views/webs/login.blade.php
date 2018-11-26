@@ -9,10 +9,10 @@
     <meta name="author" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('plug/font-awesome/css/font-awesome.css')}}">
 
-    <script src="{{asset('js/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('js/jquery/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
 
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/stylesheets/theme.css')}}">
