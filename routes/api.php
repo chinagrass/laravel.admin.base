@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::namespace('Api')->group(function(){
     Route::post("/signIn","SignController@signIn"); // 用户登录
-})
+});
