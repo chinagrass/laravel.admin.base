@@ -60,7 +60,6 @@
 
         <li><a href="help.html" class="nav-header"><i class="fa fa-fw fa-question-circle"></i> Help</a></li>
         <li><a href="faq.html" class="nav-header"><i class="fa fa-fw fa-comment"></i> Faq</a></li>
-        <li><a href="http://portnine.com/bootstrap-themes/aircraft" class="nav-header" target="blank"><i
-                        class="fa fa-fw fa-heart"></i> Get Premium</a></li>
+        <li><a href="http://portnine.com/bootstrap-themes/aircraft" class="nav-header" target="blank"><i class="fa fa-fw fa-heart"></i> Get Premium</a></li>
     </ul>
 </div>

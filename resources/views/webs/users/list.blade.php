@@ -1,5 +1,12 @@
 @extends('layouts.layout')
 @section('title', '用户列表')
+@section('style')
+    @parent
+@endsection
+
+@section('script')
+    @parent
+@endsection
 @section('content')
     <div class="header">
 
