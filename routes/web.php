@@ -16,4 +16,5 @@ Route::namespace("Web")->group(function(){
     Route::get('/',"IndexController@index");// 首页
     Route::get('/login',"LoginController@login");// 登录页面
     Route::post('/signIn','SignController@signIn'); // 提交表单
+    Route::get('/userList','UserController@dataList');  // 用户列表
 });

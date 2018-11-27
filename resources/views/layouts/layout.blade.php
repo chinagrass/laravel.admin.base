@@ -7,26 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    @section('style')
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{asset('plug/font-awesome/css/font-awesome.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/stylesheets/theme.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/stylesheets/premium.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/admin/layout.css')}}">
+    @show
+    @section('script')
+        <script src="{{asset('js/jquery/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('plug/font-awesome/css/font-awesome.css')}}">
-
-    <script src="{{asset('js/jquery/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
-
-    <script src="{{asset('plug/jQuery-Knob/js/jquery.knob.js')}}" type="text/javascript"></script>
-
-    <link rel="stylesheet" type="text/css" href="{{asset('css/stylesheets/theme.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/stylesheets/premium.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/admin/layout.css')}}">
-
+        <script src="{{asset('plug/jQuery-Knob/js/jquery.knob.js')}}" type="text/javascript"></script>
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="{{asset('js/bootstrap/bootstrap.js')}}"></script>
+        <script src="{{asset('js/admin/layout.js')}}"></script>
+    @show
 </head>
-<body class=" theme-blue">
-
-<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<body class="theme-blue">
 
 <!--[if lt IE 7 ]>
 <body class="ie ie6"> <![endif]-->
@@ -37,7 +38,6 @@
 <!--[if IE 9 ]>
 <body class="ie ie9 "> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-
 <!--<![endif]-->
 
 <div class="navbar navbar-default" role="navigation">
@@ -76,15 +76,10 @@
     </div>
 </div>
 
-
 @include('layouts.left')
-
 <div class="content">
     @yield('content')
     @include('layouts.footer')
 </div>
-<script src="{{asset('js/bootstrap/bootstrap.js')}}"></script>
-<script src="{{asset('js/admin/layout.js')}}"></script>
-
 </body>
 </html>

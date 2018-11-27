@@ -5,7 +5,7 @@
         <li>
             <ul class="dashboard-menu nav nav-list collapse in">
                 <li><a href="index.html"><span class="fa fa-caret-right"></span> Main</a></li>
-                <li><a href="users.html"><span class="fa fa-caret-right"></span> User List</a></li>
+                <li><a href="{{asset('/userList')}}"><span class="fa fa-caret-right"></span> User List</a></li>
                 <li><a href="user.html"><span class="fa fa-caret-right"></span> User Profile</a></li>
                 <li><a href="media.html"><span class="fa fa-caret-right"></span> Media</a></li>
                 <li><a href="calendar.html"><span class="fa fa-caret-right"></span> Calendar</a></li>
