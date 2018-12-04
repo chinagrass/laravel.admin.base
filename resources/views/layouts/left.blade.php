@@ -4,7 +4,7 @@
                         class="fa fa-fw fa-dashboard"></i> Dashboard<i class="fa fa-collapse"></i></a></li>
         <li>
             <ul class="dashboard-menu nav nav-list collapse in">
-                <li><a href="index.html"><span class="fa fa-caret-right"></span> Main</a></li>
+                <li><a href="{{asset('/')}}"><span class="fa fa-caret-right"></span> Main</a></li>
                 <li><a href="{{asset('/userList')}}"><span class="fa fa-caret-right"></span> User List</a></li>
                 <li><a href="user.html"><span class="fa fa-caret-right"></span> User Profile</a></li>
                 <li><a href="media.html"><span class="fa fa-caret-right"></span> Media</a></li>
