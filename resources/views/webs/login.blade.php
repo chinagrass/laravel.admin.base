@@ -39,7 +39,7 @@
 
 <div class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-        <a class="" href="index.html"><span class="navbar-brand"><span class="fa fa-paper-plane"></span> Aircraft</span></a>
+        <a class="" href="index.html"><span class="navbar-brand"><span class="fa fa-paper-plane"></span> WeiGo后台管理</span></a>
     </div>
 
     <div class="navbar-collapse collapse" style="height: 1px;">
