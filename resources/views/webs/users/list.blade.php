@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-sm-9 col-md-9">
             <form class="form-inline" style="margin-top:0px;" method="get" action="{{asset('/userList')}}">
-                <input class="input-xlarge form-control" placeholder="搜索账号..." id="appendedInputButton" type="text">
+                <input class="input-xlarge form-control" placeholder="搜索账号..." id="appendedInputButton" type="text" name="username">
                 <button class="btn btn-default" type="button"><i class="fa fa-search"></i> 搜索</button>
             </form>
         </div>
