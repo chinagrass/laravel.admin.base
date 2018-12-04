@@ -29,74 +29,26 @@
         <table class="table">
             <thead>
             <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>用户ID</th>
+                <th>用户姓名</th>
+                <th>创建时间</th>
+                <th>用户状态</th>
                 <th style="width: 3.5em;"></th>
             </tr>
             </thead>
             <tbody>
+            @foreach($users as $user)
             <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Tompson</td>
-                <td>the_mark7</td>
+                <td>{{$user->id}}</td>
+                <td>{{$user->username}}</td>
+                <td>{{date("Y-m-d H:i:s",$user->created)}}</td>
+                <td>{{$user->created ? "正常" : "关闭"}}</td>
                 <td>
                     <a href="user.html"><i class="fa fa-pencil"></i></a>
                     <a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
                 </td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>Ashley</td>
-                <td>Jacobs</td>
-                <td>ash11927</td>
-                <td>
-                    <a href="user.html"><i class="fa fa-pencil"></i></a>
-                    <a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Audrey</td>
-                <td>Ann</td>
-                <td>audann84</td>
-                <td>
-                    <a href="user.html"><i class="fa fa-pencil"></i></a>
-                    <a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>John</td>
-                <td>Robinson</td>
-                <td>jr5527</td>
-                <td>
-                    <a href="user.html"><i class="fa fa-pencil"></i></a>
-                    <a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Aaron</td>
-                <td>Butler</td>
-                <td>aaron_butler</td>
-                <td>
-                    <a href="user.html"><i class="fa fa-pencil"></i></a>
-                    <a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Chris</td>
-                <td>Albert</td>
-                <td>cab79</td>
-                <td>
-                    <a href="user.html"><i class="fa fa-pencil"></i></a>
-                    <a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
-                </td>
-            </tr>
+            @endforeach
             </tbody>
         </table>
 
