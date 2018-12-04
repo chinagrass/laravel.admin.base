@@ -68,7 +68,7 @@
                     <li><a href="./">Security</a></li>
                     <li><a tabindex="-1" href="./">Payments</a></li>
                     <li class="divider"></li>
-                    <li><a tabindex="-1" href="sign-in.html">Logout</a></li>
+                    <li><a tabindex="-1" href="{{'/signOut'}}">Logout</a></li>
                 </ul>
             </li>
         </ul>

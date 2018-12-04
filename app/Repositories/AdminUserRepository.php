@@ -18,7 +18,7 @@ class AdminUserRepository extends BaseRepository
      * @param $password
      * @return array
      */
-    public function checkUser($username, $password)
+    public function signIn($username, $password)
     {
         try {
             $result = ["code" => ErrorCodeCommon::SUCCESS, "msg" => "登录成功！"];
@@ -39,6 +39,10 @@ class AdminUserRepository extends BaseRepository
             $result["msg"] = $e->getMessage();
         }
         return $result;
+    }
+    public function signOut()
+    {
+
     }
 
 }

@@ -16,12 +16,10 @@ class LoginController extends Controller
 {
     public function login()
     {
-        $data = ["title" => 'Admin Login','formName'=>'Sign In WeiGo Admin'];
+        if (!session('user')) {
+            return redirect('/login');
+        }
+        $data = ["title" => 'Admin Login', 'formName' => 'Sign In WeiGo Admin'];
         return Response::view("webs.login", $data);
-    }
-
-    public function logout()
-    {
-
     }
 }

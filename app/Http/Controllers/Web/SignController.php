@@ -33,7 +33,7 @@ class SignController extends Controller
             RegisterRepository::set("admin_user_repository", $adminUserRepository);
         }
         if ($adminUserRepository instanceof AdminUserRepository) {
-            $result = $adminUserRepository->checkUser($username, $pwd);
+            $result = $adminUserRepository->signIn($username, $pwd);
         }
         if (isset($result["code"]) && $result["code"] == ErrorCodeCommon::SUCCESS) {
             return redirect("/");
@@ -41,8 +41,9 @@ class SignController extends Controller
         return redirect("/login");
     }
 
-    public function signOut()
+    public function signOut(Request $request)
     {
-
+        $request->session()->flush();
+        return redirect("login");
     }
 }
