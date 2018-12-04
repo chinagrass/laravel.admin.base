@@ -100,7 +100,7 @@
             </tbody>
         </table>
 
-        <ul class="pagination">
+        {{--<ul class="pagination">
             <li><a href="#">&laquo;</a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
@@ -108,7 +108,8 @@
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
             <li><a href="#">&raquo;</a></li>
-        </ul>
+        </ul>--}}
+        {{$users->links()}}
 
         <div class="modal small fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">

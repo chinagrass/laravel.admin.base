@@ -40,9 +40,11 @@ class AdminUserRepository extends BaseRepository
         }
         return $result;
     }
-    public function signOut()
+    public function dataList()
     {
-
+        $adminModel = $this->model;
+        $list = $adminModel->paginate(15);
+        return $list;
     }
 
 }
