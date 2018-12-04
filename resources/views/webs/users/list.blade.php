@@ -17,16 +17,15 @@
         </ul>
 
     </div>
-    <div class="main-content">
-
-        <div class="row">
-            <div class="col-sm-9 col-md-9">
-                <form class="form-inline" style="margin-top:0px;">
-                    <input class="input-xlarge form-control" placeholder="Search Help..." id="appendedInputButton" type="text">
-                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i> Go</button>
-                </form>
-            </div>
+    <div class="row">
+        <div class="col-sm-9 col-md-9">
+            <form class="form-inline" style="margin-top:0px;">
+                <input class="input-xlarge form-control" placeholder="Search Help..." id="appendedInputButton" type="text">
+                <button class="btn btn-default" type="button"><i class="fa fa-search"></i> Go</button>
+            </form>
         </div>
+    </div>
+    <div class="main-content">
         <table class="table">
             <thead>
             <tr>
