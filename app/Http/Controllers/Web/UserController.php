@@ -27,8 +27,8 @@ class UserController extends WebController
         $this->user = RegisterRepository::get("admin_user_repository");
         if (!$this->user) {
             $model = new AdminUserModel();
-            $adminUserRepository = new AdminUserRepository($model);
-            RegisterRepository::set("admin_user_repository", $adminUserRepository);
+            $this->user = new AdminUserRepository($model);
+            RegisterRepository::set("admin_user_repository", $this->user);
         }
     }
     public function dataList(Request $request)
