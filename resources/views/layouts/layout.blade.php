@@ -55,7 +55,8 @@
         <ul id="main-menu" class="nav navbar-nav navbar-right">
             <li class="dropdown hidden-xs">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <span class="glyphicon glyphicon-user padding-right-small" style="position:relative;top: 3px;"></span> {{Session::get('username')}}
+                    <span class="glyphicon glyphicon-user padding-right-small" style="position:relative;top: 3px;"></span>
+                    {{$admin_user}}
                     <i class="fa fa-caret-down"></i>
                 </a>
 
