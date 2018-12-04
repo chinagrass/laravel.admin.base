@@ -43,7 +43,7 @@ class AdminUserRepository extends BaseRepository
     public function dataList()
     {
         $adminModel = $this->model;
-        $list = $adminModel->paginate(15);
+        $list = $adminModel->paginate(10);
         return $list;
     }
 
