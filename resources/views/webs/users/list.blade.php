@@ -19,11 +19,12 @@
     </div>
     <div class="main-content">
 
-        <div class="btn-toolbar list-toolbar">
-            <button class="btn btn-primary"><i class="fa fa-plus"></i> New User</button>
-            <button class="btn btn-default">Import</button>
-            <button class="btn btn-default">Export</button>
-            <div class="btn-group">
+        <div class="row">
+            <div class="col-sm-9 col-md-9">
+                <form class="form-inline" style="margin-top:0px;">
+                    <input class="input-xlarge form-control" placeholder="Search Help..." id="appendedInputButton" type="text">
+                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i> Go</button>
+                </form>
             </div>
         </div>
         <table class="table">

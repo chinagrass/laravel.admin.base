@@ -34,7 +34,8 @@ class UserController extends WebController
     public function dataList(Request $request)
     {
         $user = $this->getUser();
-        $dataList = $user->dataList();
+        $pageSize = $request->get("page_size",10);
+        $dataList = $user->dataList($pageSize);
         return Response::view("webs.users.list",['users'=>$dataList]);
     }
 
