@@ -16,8 +16,9 @@ class LoginController extends Controller
 {
     public function login()
     {
-        if (!session('user')) {
-            return redirect('/login');
+        $user = session('user');
+        if (!empty($user) && !empty($user['username'])) {
+            return redirect('/');
         }
         $data = ["title" => 'Admin Login', 'formName' => 'Sign In WeiGo Admin'];
         return Response::view("webs.login", $data);
