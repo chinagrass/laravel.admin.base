@@ -48,7 +48,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="" href="index.html"><span class="navbar-brand"><span class="fa fa-paper-plane"></span> WeiGo后台管理</span></a>
+        <a class="" href="index.html"><span class="navbar-brand"><span class="fa fa-paper-plane"></span> WeiGo鍚庡彴绠＄悊</span></a>
     </div>
 
     <div class="navbar-collapse collapse" style="height: 1px;">
