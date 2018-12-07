@@ -41,9 +41,12 @@ class AdminUserRepository extends BaseRepository
         return $result;
     }
 
-    public function dataList($pageSize = 10)
+    public function dataList(array $params = [], $pageSize = 10)
     {
         $adminModel = $this->model;
+        if (!empty($params['username'])) {
+            $adminModel = $adminModel->where("username",$params['username']);
+        }
         $list = $adminModel->paginate($pageSize);
         return $list;
     }
