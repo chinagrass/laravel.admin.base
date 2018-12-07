@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Response;
 
 class IndexController extends WebController
 {
+    /**
+     * Ê×Ò³
+     * @param Request $request
+     * @return \Illuminate\Http\Response
+     */
     public function index(Request $request)
     {
         return Response::view("webs.index");

@@ -41,6 +41,12 @@ class AdminUserRepository extends BaseRepository
         return $result;
     }
 
+    /**
+     * 查询用户列表
+     * @param array $params
+     * @param int $pageSize
+     * @return mixed
+     */
     public function dataList(array $params = [], $pageSize = 10)
     {
         $adminModel = $this->model;

@@ -31,6 +31,12 @@ class UserController extends WebController
             RegisterRepository::set("admin_user_repository", $this->user);
         }
     }
+
+    /**
+     * 数据列表
+     * @param Request $request
+     * @return \Illuminate\Http\Response
+     */
     public function dataList(Request $request)
     {
         $user = $this->getUser();

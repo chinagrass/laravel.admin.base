@@ -41,9 +41,14 @@ class SignController extends Controller
         return redirect("/login");
     }
 
+    /**
+     * 登出
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function signOut(Request $request)
     {
-        $request->session()->flush();
-        return redirect("login");
+        $request->session()->flush();// 清空session
+        return redirect("login"); // 重定向到登录页面
     }
 }

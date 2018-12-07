@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Response;
 
 class LoginController extends Controller
 {
+    /**
+     * µÇÂ¼½çÃæ
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     */
     public function login()
     {
         $user = session('user');
