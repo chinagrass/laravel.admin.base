@@ -36,10 +36,10 @@ class UserController extends WebController
         $user = $this->getUser();
         $pageSize = $request->get("page_size",10);
         $params = [
-            "username"=>$request->get("username"),
+            "username"=>$request->get("username",''),
         ];
         $dataList = $user->dataList($params,$pageSize);
-        return Response::view("webs.users.list",['users'=>$dataList]);
+        return Response::view("webs.users.list",['users'=>$dataList,'params'=>$params]);
     }
 
     /**

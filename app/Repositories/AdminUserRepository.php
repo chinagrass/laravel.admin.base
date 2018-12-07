@@ -47,7 +47,7 @@ class AdminUserRepository extends BaseRepository
         if (!empty($params['username'])) {
             $adminModel = $adminModel->where("username",$params['username']);
         }
-        $list = $adminModel->paginate($pageSize);
+        $list = $adminModel->paginate($pageSize)->appends($params);
         return $list;
     }
 
