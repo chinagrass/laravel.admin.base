@@ -12,7 +12,7 @@ namespace App\Http\Controllers\Web;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Response;
 
-class MakeHtml extends Controller
+class MakeHtmlController extends Controller
 {
     public function index(){
         $htmlContents = Response::view("makes.index",['title'=>"hello","content"=>"hello world!"])->__toString();
