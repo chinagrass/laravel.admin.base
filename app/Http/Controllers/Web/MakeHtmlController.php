@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Response;
 class MakeHtmlController extends Controller
 {
     public function index(){
-        $htmlContents = Response::view("makes.index",['title'=>"hello","content"=>"hello world!"])->__toString();
+        $htmlContents = Response::view("webs.makes.index",['title'=>"hello","content"=>"hello world!"])->__toString();
         var_dump($htmlContents);die;
     }
 }
