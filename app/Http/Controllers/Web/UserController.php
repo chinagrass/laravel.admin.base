@@ -33,7 +33,7 @@ class UserController extends WebController
     }
 
     /**
-     * 数据列表
+     * 鐢ㄦ埛鍒楄〃
      * @param Request $request
      * @return \Illuminate\Http\Response
      */
@@ -54,5 +54,10 @@ class UserController extends WebController
     public function getUser()
     {
         return $this->user;
+    }
+
+    public function addUser()
+    {
+        return Response::view("webs.users.add");
     }
 }

@@ -18,4 +18,5 @@ Route::namespace("Web")->group(function(){
     Route::post('/signIn','SignController@signIn'); // 提交表单
     Route::get('/signOut','SignController@signOut'); // 登出
     Route::get('/userList','UserController@dataList');  // 用户列表
+    Route::get('/makeHtml','MakeHtmlController@index');  // 用户列表
 });

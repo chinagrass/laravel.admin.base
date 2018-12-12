@@ -2,8 +2,7 @@
     <hr>
 
     <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
-    <p class="pull-right">A <a href="http://www.portnine.com/bootstrap-themes" target="_blank">Free Bootstrap
-            Theme</a> by <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+    <p class="pull-right">后台管理 by <a href="http://www.weigo.org" target="_blank">WeiGO</a></p>
 
-    <p>© 2014 <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+    <p>© 2018 <a href="http://www.weigo.org" target="_blank">WeiGo</a></p>
 </footer>
