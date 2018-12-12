@@ -19,7 +19,7 @@ class MakeHtmlController extends Controller
     public function index()
     {
         $fileSystem = new Filesystem();
-        $dir = config("filesystems.disks.public.root") . "/home";
+        $dir = config("filesystems.disks.public.root") . "/home/";
         $fileSystem->makeDirectory($dir);
         $htmlContents = view("webs.makes.index", ['title' => "hello", "content" => "hello world!"])->__toString();
         $fileSystem->replace($dir."test.html",$htmlContents);
